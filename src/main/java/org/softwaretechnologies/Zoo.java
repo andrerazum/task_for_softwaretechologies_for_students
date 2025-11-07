@@ -11,11 +11,10 @@ import java.util.stream.Collectors;
 
 public class Zoo {
     private final List<Animal> animalList = new ArrayList<>();
-    public void addAnimal(Animal animal) {
 
+    public void addAnimal(Animal animal) {
         animalList.add(animal);
     }
-
     /**
      * Метод должен возвращять список звуков животных.
      * Звуки животных должны быть отсортированы по имени житного. Пример
