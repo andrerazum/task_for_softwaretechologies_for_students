@@ -5,7 +5,7 @@ import org.softwaretechnologies.employee.*;
 public class EmployeeFactory {
 
     /**
-     * Сначала создайте классы, наследуемые от  {@link  org.softwaretechnologies.employee.Employee Employee} для каждого из значений в EmployeeType.
+     * Сначала создайте классы, наследуемые от  {@link  Employee Employee} для каждого из значений в EmployeeType.
      * Функция должна создавать и возвращать Employee нужного типа. Тип зависит от значения параметра type.
      *  name имя сотрудника
      *  baseSalary базовая зарплата сотрудника
@@ -16,8 +16,6 @@ public class EmployeeFactory {
 
 
     public static Employee createEmployee(String name, int baseSalary, EmployeeType type) {
-        // TODO: реализуйте вышеуказанную функцию
-
-        return null;
+        return type.createEmployee(name, baseSalary);
     }
 }
