@@ -27,7 +27,7 @@ public class Money {
         Money money = (Money) o;
         // Сравнение type с обработкой null
         if (!Objects.equals(type, money.type)) return false;
-        if (amount == null && money.amount == null) return true;
+        //if (amount == null && money.amount == null) return true;
         if (amount == null || money.amount == null) return false;
         BigDecimal thisScaled = amount.setScale(4, RoundingMode.HALF_UP);
         BigDecimal otherScaled = money.amount.setScale(4, RoundingMode.HALF_UP);
